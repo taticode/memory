@@ -1,0 +1,128 @@
+body {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: #ededed;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.mesa {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 100vw;
+  margin: 2rem auto;
+}
+
+.tarjeta {
+  box-sizing: border-box;
+  width: 10rem;
+  height: 10rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  background-image: url(./../assets/pattern.png);
+  background-repeat: repeat;
+  background-size: contain;
+  border: 3px solid #f69090;
+  box-shadow:  4px 4px 8px #b0b0b0,
+  -4px -4px 88px #fafafa;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  
+}
+
+.contenido {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid transparent;
+  transition: all .3s;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  background-color: white;
+  box-shadow:  4px 4px 8px #b0b0b0,
+  -4px -4px 88px #fafafa;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.4rem;
+}
+
+.tarjeta__contenido::selection {
+  background: transparent;
+}
+
+.icon{
+  width: 45%;
+}
+
+
+.nombre{
+  margin: 0;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+}
+.descubierta {
+  transform: rotateY(-180deg);
+}
+
+.acertada .contenido {
+  border: 5px solid lightgreen;
+}
+
+
+.aparecer{
+  animation: appear 1s;
+
+}
+
+.croupier{
+  background-color: white;
+  color: #f69090;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  border: 0px;
+  border-radius: 0.3rem;
+  padding: 1rem 1.5rem;
+  box-shadow:  4px 4px 8px #b0b0b0,
+  -4px -4px 88px #fafafa;
+  transition: all .3s;
+}
+.croupier:hover{
+  cursor: pointer;
+  background-color: #f69090;
+  color: white;
+
+}
+
+@keyframes appear {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.red{
+  border: 3px solid red; 
+  background-color: red;
+}
