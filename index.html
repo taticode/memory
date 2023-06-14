@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Memory Tatiana García</title>
+    <title>Memory game 🇬🇧 🇪🇸</title>
     <link
       href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:600"
       rel="stylesheet"
@@ -17,10 +17,43 @@
 
   <body>
     <main>
-      <section id="mesa" class="mesa"></section>
-      <button class="croupier">Repartir cartas</button>
-    </main>
 
-    <script src="js/javascript.js"></script>
+
+      <section class="bar-contador">
+        <article class="tiempo">
+          <h4 class="cabecera-titulo">Movimientos</h4>
+          <div class="reloj">
+            <p id="mov">00</p><span>/</span><p>10</p>
+          </div>
+          </article>
+        <article class="tiempo">
+        <h4 class="cabecera-titulo">Tiempo</h4>
+        <div class="reloj">
+          <p id="minutos">00</p>
+          <span>:</span>
+          <p id="segundos">00</p>
+        </div>
+        </article>
+        <button class="restart">Reiniciar</button>
+      </section>
+      <section id="mesa" class="mesa"></section>
+
+      <section id="feedback" class="feedback">
+        <div class="modal">
+          <h2>¡Buen trabajo! 🥳</h2>
+          <button class="croupier">Nuevo juego</button>
+        </div>
+      </section>
+
+    </main>
+    <script src="js/variables-globales.js"></script>
+
+    <script src="js/baraja-reparte.js"></script>
+    <script src="js/contador-mov.js"></script>
+    <script src="js/descubrir-comparar.js"></script>
+    <script src="js/acierto-error.js"></script>
+    <script src="js/cronometro.js"></script>
+    <script src="js/iniciar.js"></script>
+    <script src="js/finalizar.js"></script>
   </body>
 </html>

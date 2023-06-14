@@ -5,6 +5,20 @@ body {
   background: #ededed;
 }
 
+
+h4{
+  line-height: 2rem;
+  margin: 0;
+  color: #343434;
+}
+p{
+  line-height: 2rem;
+  margin: 0;
+  padding: .2rem 0;
+}
+p, span{
+  font-size: 1.5rem;
+}
 main {
   flex-grow: 1;
   display: flex;
@@ -61,7 +75,7 @@ main {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding: 0.4rem;
 }
@@ -77,8 +91,8 @@ main {
 
 .nombre{
   margin: 0;
-  padding: 1rem 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding-top: 1rem;
 }
 .descubierta {
   transform: rotateY(-180deg);
@@ -87,42 +101,118 @@ main {
 .acertada .contenido {
   border: 5px solid lightgreen;
 }
-
+.acertada .contenido::after{
+  content: '✅';
+  position: absolute; 
+  top: -1rem;
+  right: -1rem;
+  transition: all 0.3s;
+  transform: scale(0,0);
+  transform-origin: center;
+}
+.acertada .contenido::after{
+  font-size: 2rem;
+  transform: scale(1,1);
+}
+.english{
+  background-color: rgb(238, 243, 250);
+}
+.spanish{
+  background-color: rgb(253, 253, 233);
+}
 
 .aparecer{
-  animation: appear 1s;
+  animation: appear .5s;
 
 }
 
-.croupier{
+.bar-contador{
+  position: fixed; 
+  top: 0; 
+  width: 100%;
   background-color: white;
+  display: flex;
+}
+
+
+.tiempo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.tiempo p, .tiempo span{
   color: #f69090;
+}
+
+.reloj{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.croupier, .restart{
+
   font-size: 1.2rem;
   margin: 0 auto;
   border: 0px;
   border-radius: 0.3rem;
   padding: 1rem 1.5rem;
-  box-shadow:  4px 4px 8px #b0b0b0,
-  -4px -4px 88px #fafafa;
-  transition: all .3s;
-}
-.croupier:hover{
-  cursor: pointer;
+  box-shadow:  5px 5px 10px #8f5454;
+  color: white;
   background-color: #f69090;
+
+}
+.croupier:hover, .restart:hover{
+  cursor: pointer;
+  background-color: #f86464;
   color: white;
 
+}
+.modal{
+  width: 40%;
+  height: 40%;
+  padding: 2rem;
+  background-color: white;
+  color: #f69090;
+  box-shadow:  5px 5px 10px #8f5454;
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.feedback{
+  width: 100vw;
+  height: 100vh;
+  position: absolute; 
+  z-index: 5;
+  background-color: #f69090;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all .3s;
+}
+.visible{
+
+  transform: scale(1);
 }
 
 @keyframes appear {
   0%{
     transform: scale(0);
+    border-radius: 100%;
   }
   100%{
     transform: scale(1);
+    border-radius: 8px;
   }
-}
-
-.red{
-  border: 3px solid red; 
-  background-color: red;
 }
