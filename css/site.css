@@ -16,3 +16,11 @@ body {
   background: var(--bg);
   font-family: var(--font);
 }
+
+ul{
+  list-style: none;
+
+}
+li{
+  font-size: 1rem;
+}

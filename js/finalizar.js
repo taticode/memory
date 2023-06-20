@@ -8,4 +8,4 @@ function ocultarFeedback(){
     document.querySelector('#feedback').classList.remove('visible');
 }
 let croupier = document.querySelector(".croupier");
-croupier.addEventListener("click",(ocultarFeedback ,iniciar));
+croupier.addEventListener("click",(ocultarFeedback));

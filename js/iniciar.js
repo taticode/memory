@@ -4,8 +4,6 @@ function iniciar(){
 
 
 
-    reparteTarjetas(); 
-
     document.querySelectorAll(".tarjeta").forEach(function(elemento) {
     
         elemento.addEventListener("click", descubrir);
@@ -15,8 +13,3 @@ function iniciar(){
 /* iniciarCronometro() */
 }
 
-iniciar();
-
-    
-let restart = document.querySelector(".restart");
-restart.addEventListener("click", iniciar );

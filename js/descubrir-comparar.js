@@ -23,14 +23,10 @@ if (tarjetasPendientes.length === 0){
 }
 }
 
-
 function comparar(tarjetasAComparar) {
-
-if(tarjetasAComparar[0].id === tarjetasAComparar [1].id){
-    acierto(tarjetasAComparar)
-}else {
-    error(tarjetasAComparar);
-
-}
-
-}
+    if (tarjetasAComparar[0].classList.contains(tarjetasAComparar[1].classList[1])) {
+      acierto(tarjetasAComparar);
+    } else {
+      error(tarjetasAComparar);
+    }
+  }
