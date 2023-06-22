@@ -1,4 +1,3 @@
 # memory
 memory game made with javascript and css
-
-<img width="1440" alt="memory-game" src="https://github.com/taticode/memory/assets/38464425/2e146222-89e1-43c6-9cd0-b75b4541db83">
+<img width="1440" alt="Captura de pantalla 2023-06-22 a las 21 40 25" src="https://github.com/taticode/memory/assets/38464425/2896a9d2-0a0f-427d-a0f7-47522c4a3689">
