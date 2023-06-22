@@ -17,7 +17,9 @@ p{
 p, span{
   font-size: 1.5rem;
 }
-
+#menu{
+  position: absolute;
+}
 ul{
   box-sizing: border-box;
   display: flex;
@@ -26,7 +28,7 @@ ul{
   justify-content: flex-start;
   align-items: flex-start;
   color: #05257C;
-  max-width: 10rem;
+  width: fit-content;
   margin: 0;
   padding: 0;
   border-right: 1px solid #ededed;
@@ -34,7 +36,7 @@ ul{
 ul li{
   box-sizing: border-box;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-bottom: 1px solid #ededed;
   background-color: white;
   box-shadow: 3px 3px 6px #ededed;
@@ -54,9 +56,7 @@ main {
   justify-content: flex-start;
   position: relative;
 }
-#menu{
-  position: absolute;
-}
+
 
 .mesa {
   box-sizing: border-box;
@@ -236,7 +236,6 @@ main {
   height: 100vh;
   position: absolute; 
   z-index: 5;
-  background-color: #f69090;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;

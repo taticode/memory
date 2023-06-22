@@ -10,6 +10,6 @@ function iniciar(){
     });
     document.querySelector("#mov").innerText = '0';
     document.querySelector('#feedback').classList.remove('visible');
-/* iniciarCronometro() */
+
 }
 

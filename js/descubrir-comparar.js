@@ -20,6 +20,7 @@ actualizarMovs();
 tarjetasPendientes = document.querySelectorAll(".tarjeta:not(.acertada)");
 if (tarjetasPendientes.length === 0){
     setTimeout(feedback, 500); 
+    pausarCronometro()
 }
 }
 

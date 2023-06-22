@@ -606,7 +606,7 @@ let eventos = [
             english: 'whistle'
         },
         icono: './assets/img/fiesta/whistle.png'
-    },
+    }
 ]
 
 

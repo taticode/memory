@@ -25,9 +25,10 @@ categorias.forEach(nombre => {
       }
       
   
-      console.log(selectedArray);
+      
       reparteTarjetas()
       iniciar()
+      iniciarCronometro()
 
     });
     li.textContent = nombre.charAt(0).toUpperCase() + nombre.slice(1);
