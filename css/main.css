@@ -39,15 +39,14 @@ ul{
   width: fit-content;
   margin: 0;
   padding: 0;
-  border-right: 1px solid #ededed;
+
 }
 ul li{
   box-sizing: border-box;
   width: 100%;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #ededed;
-  background-color: white;
-  box-shadow: 3px 3px 6px #ededed;
+  border-bottom: 1px solid #05257C;
+
 }
 ul li:hover{
   cursor: pointer;
