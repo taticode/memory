@@ -1,13 +1,18 @@
 body {
   font-size: 2rem;
   display: flex;
+  font-family: sans-serif;
   flex-direction: column;
-  background: #ededed;
+  background-image: url(../assets/img/aron-van-de-pol.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
 }
 h1{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #05257C;
   margin: 0;
+
 }
 
 p{
@@ -19,6 +24,9 @@ p, span{
 }
 #menu{
   position: absolute;
+}
+#menu h1{
+  padding-bottom: 1rem;
 }
 ul{
   box-sizing: border-box;
@@ -44,12 +52,62 @@ ul li{
 ul li:hover{
   cursor: pointer;
   transition: all .3s;
-  background-color: lightcoral;
+  background-color: #D42632;
   color: white;
 }
 
+#logo{
+  display: flex;
+  align-items: center;
+
+}
+#logo h1{
+  font-size: 2rem;
+  font-family: 'Tilt Prism', cursive;
+}
+#logo img{
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.bar-contador{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.contadores{
+  display: flex;
+}
+.tiempo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tiempo h1{
+  margin-right: 1rem;
+}
+.tiempo p, .tiempo span{
+  margin-right: .2rem;
+  color: #D42632;
+}
+
+.reloj{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 main {
+  padding: 0 1rem 1rem 1rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -67,7 +125,8 @@ main {
   align-content: center;
   width: 100%;
   height: 100%;
-  padding: 1rem 1rem 1rem 7rem;
+  padding-left: 8rem;
+  padding-top: 1rem;
   margin-left: 0 auto;
 }
 
@@ -75,14 +134,13 @@ main {
   box-sizing: border-box;
   width: 8rem;
   height: 8rem;
-  margin: 0.5rem;
+  margin: 0 0.8rem 0.8rem 0;
   border-radius: 1rem;
   background-image: url(./../assets/pattern.png);
   background-repeat: repeat;
   background-size: contain;
   border: 3px solid #f69090;
-  box-shadow:  4px 4px 8px #b0b0b0,
-  -4px -4px 88px #fafafa;
+  box-shadow:  4px 4px 8px #191919;
   position: relative;
   transition: all 0.3s;
   cursor: pointer;
@@ -103,8 +161,6 @@ main {
   transform: rotateY(-180deg);
   backface-visibility: hidden;
   background-color: white;
-  box-shadow:  4px 4px 8px #b0b0b0,
-  -4px -4px 88px #fafafa;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -161,40 +217,6 @@ main {
 
 }
 
-.bar-contador{
-  width: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-
-.tiempo{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  padding: .5rem;
-}
-.tiempo h1{
-  margin-right: 1rem;
-}
-.tiempo p, .tiempo span{
-  margin-right: .2rem;
-  color: #f69090;
-}
-
-.reloj{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .croupier{
 
   font-size: 1.2rem;
@@ -204,7 +226,7 @@ main {
   padding: 1rem 1.5rem;
   box-shadow: 5px 5px 10px #8f5454;
   color: white;
-  background-color: #f69090;
+  background-color: #D42632;
   line-height: 1rem;
   box-sizing: border-box;
   height: 3rem;
@@ -222,8 +244,8 @@ main {
   height: 40%;
   padding: 2rem;
   background-color: white;
-  color: #f69090;
-  box-shadow:  5px 5px 10px #8f5454;
+  color: #D42632;
+  box-shadow:  4px 4px 8px #191919;
   border-radius: .3rem;
   display: flex;
   flex-direction: column;

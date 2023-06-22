@@ -9,6 +9,9 @@
 
     <title>Memory game</title>
     <link rel="icon" type="image/x-icon" href="./united-kingdom.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Tilt+Prism&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:600"
       rel="stylesheet"
@@ -19,36 +22,44 @@
 
   <body>
     <section class="bar-contador">
-      <h1>Memory game 🇬🇧 🇪🇸</h1>
-      <article class="tiempo">
-        <h1 class="cabecera-titulo">Movimientos</h1>
+      <div id="logo">
+        <h1>Memory game</h1>
+        <img src="./assets/img/united-kingdom-flag.png" alt="bandera de Reino Unido">
+      </div>
+
+      <section class="contadores">
+        <article class="tiempo">
+          <h1 class="cabecera-titulo">Movimientos</h1>
+          <div class="reloj">
+            <p id="mov">00</p>
+          </div>
+          </article>
+        <article class="tiempo">
+        <h1 class="cabecera-titulo">Tiempo</h1>
         <div class="reloj">
-          <p id="mov">00</p>
+          <p id="minutos">00</p>
+          <span>:</span>
+          <p id="segundos">00</p>
         </div>
         </article>
-      <article class="tiempo">
-      <h1 class="cabecera-titulo">Tiempo</h1>
-      <div class="reloj">
-        <p id="minutos">00</p>
-        <span>:</span>
-        <p id="segundos">00</p>
-      </div>
-      </article>
+      </section>
+
 
     </section>
     <main>
-      <nav id="menu"></nav>
+      <nav id="menu">
+        <h1>Categorías</h1>
+      </nav>
 
       <section id="mesa" class="mesa"></section>
 
-      <section id="feedback" class="feedback">
-        <div class="modal">
-          <h2>¡Buen trabajo! 🥳</h2>
-          <button class="croupier">Elegir otra categoría</button>
-        </div>
-      </section>
-
     </main>
+    <section id="feedback" class="feedback">
+      <div class="modal">
+        <h2>¡Buen trabajo! 🥳</h2>
+        <button class="croupier">Seguir jugando</button>
+      </div>
+    </section>
     <script src="js/variables-globales.js"></script>
     <script src="js/crear-menu.js"></script>
     <script src="js/baraja-reparte.js"></script>

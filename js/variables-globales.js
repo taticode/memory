@@ -487,12 +487,12 @@ let eventos = [
         icono: './assets/img/fiesta/champagne.png'
     },
     {
-        clave: 'fuegos',
+        clave: 'invitados',
         languages: {
-            spanish: 'fuegos artificiales',
-            english: 'fireworks'
+            spanish: 'invitados',
+            english: 'guests'
         },
-        icono: './assets/img/fiesta/fireworks.png'
+        icono: './assets/img/fiesta/guests.png'
     },
     {
         clave: 'guirnaldas',
