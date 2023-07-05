@@ -236,8 +236,7 @@ main {
 
 .nombre {
   margin: 0;
-  font-size: 12px;
-  /* padding-top: 1rem; */
+  font-size: .9rem;
 }
 
 .descubierta {
@@ -428,7 +427,7 @@ details[open] summary {
     height: 2rem;
   }
   .description{
-    font-size: .8rem;
+    font-size: .9rem;
   }
   .mesa {
     width: 100%;
@@ -451,9 +450,7 @@ details[open] summary {
   .icon{
     width: 68%;
   }
-  .nombre{
-    font-size: 1.2rem;
-  }
+
   .acertada .contenido::after{
     font-size: 1.5rem;
     top: -0.2rem;
@@ -461,6 +458,9 @@ details[open] summary {
   }
 }
 @media screen and (max-width: 580px) {
+  #logo{
+    gap: 0.5rem;
+  }
   #logo h1 {
     font-size: 1rem;
   }
@@ -469,7 +469,7 @@ details[open] summary {
     height: 1rem;
   }
   .contadores{
-
+    gap: 0.5rem;
     padding: 0.2rem 0.2rem;
   }
   .contenido.english {
@@ -479,13 +479,19 @@ details[open] summary {
   .contenido.spanish {
     border: 2px solid lightcoral;
   }
+  .acertada .contenido.english, .acertada .contenido.spanish{
+    border: 2px solid lightgreen;
+  }
+  .icon{
+    width: 53%;
+  }
 
 }
 
 
 @media screen and (max-width: 451px) {
   .tarjeta {
-    width: 5rem;
+    width: 6.5rem;
     height: 5rem;
   }
 }
