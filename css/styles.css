@@ -421,10 +421,14 @@ details[open] summary {
 @media screen and (max-width: 960px) {
   #logo h1{
     font-size: 2rem;
+    line-height: 2rem;
   }
   .flag{
     width: 2rem;
     height: 2rem;
+  }
+  .description{
+    font-size: .8rem;
   }
   .mesa {
     width: 100%;
@@ -437,8 +441,12 @@ details[open] summary {
   .contadores{
     gap: .8rem;
   }
+  .tiempo p, .tiempo span{
+    font-size: 1rem;
+  }
   .contenido{
-    padding: .8rem;
+    padding: .2rem .8rem;
+    justify-content: space-between;
   }
   .icon{
     width: 68%;
@@ -454,12 +462,24 @@ details[open] summary {
 }
 @media screen and (max-width: 580px) {
   #logo h1 {
-    font-size: 2rem;
+    font-size: 1rem;
+  }
+  .flag{
+    width: 1rem;
+    height: 1rem;
   }
   .contadores{
 
     padding: 0.2rem 0.2rem;
   }
+  .contenido.english {
+    border: 2px solid royalblue;
+  }
+  
+  .contenido.spanish {
+    border: 2px solid lightcoral;
+  }
+
 }
 
 
