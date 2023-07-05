@@ -465,7 +465,7 @@ details[open] summary {
 
 @media screen and (max-width: 451px) {
   .tarjeta {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
