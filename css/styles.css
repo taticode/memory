@@ -452,9 +452,13 @@ details[open] summary {
     right: -0.2rem;
   }
 }
-@media screen and (max-width: 521px) {
+@media screen and (max-width: 580px) {
   #logo h1 {
     font-size: 2rem;
+  }
+  .contadores{
+
+    padding: 0.2rem 0.2rem;
   }
 }
 
