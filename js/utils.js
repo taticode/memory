@@ -1,10 +1,7 @@
-
 let movimientos = 0;
 let movimientosTexto;
 let selectedArray;
 let tarjetasBarajadas;
-
-
 
 let animales = [
     {
@@ -566,7 +563,6 @@ let eventos = [
         },
         icono: './assets/img/fiesta/pinata.png'
     },
-
     {
         clave: 'popcorn',
         languages: {
@@ -608,6 +604,16 @@ let eventos = [
         icono: './assets/img/fiesta/whistle.png'
     }
 ]
-
-
 let categorias = ['animales', 'vegetales', 'comida', 'eventos'];
+
+export const state = {
+    movimientos,
+    movimientosTexto,
+    selectedArray,
+    tarjetasBarajadas,
+    animales,
+    vegetales,
+    comida,
+    eventos,
+    categorias,
+}

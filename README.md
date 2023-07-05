@@ -6,6 +6,6 @@ Juego de tarjetas para aprender vocabulario en inglés
 Consta de un contador de movimientos y un cronómetro por si te quieres superar en cada partida. 
 Puedes elegir entre varias categorías, con 19 parejas de palabras en cada una. 
 Es recomendable jugar en un ordenador porque se necesita un espacio mínimo para que se visualicen correctamente las tarjetas.
-Lo único que tienes que hacer para jugar es descargarlo y abrir su archivo index.html. 
+Lo único que tienes que hacer para jugar es entrar en ese enlace https://taticode.github.io/memory/. Si te lo quieres guardar sólo tienes que descargarlo y abrir su archivo index.html. 
 
 ¡Have fun! 🇬🇧🇬🇧🇬🇧🇬🇧🇬🇧🇬🇧

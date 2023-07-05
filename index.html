@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <title>Memory game</title>
-    <link rel="icon" type="image/x-icon" href="./united-kingdom.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Tilt+Prism&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:600"
-      rel="stylesheet"
-    />
-    <link href="css/site.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Memory game</title>
+  <meta name="description" content="Memory Game done by Tatiana">
+  <link rel="icon" type="image/x-icon" href="./united-kingdom.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Tilt+Prism&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:600" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/scripts.js" defer></script>
+</head>
 
-  <body>
-    <section class="bar-contador">
-      <div id="logo">
-        <h1>Memory game</h1>
-        <img src="./assets/img/united-kingdom-flag.png" alt="bandera de Reino Unido">
-      </div>
-
-      <section class="contadores">
-        <article class="tiempo">
-          <h1 class="cabecera-titulo">Movimientos</h1>
-          <div class="reloj">
-            <p id="mov">00</p>
-          </div>
-          </article>
-        <article class="tiempo">
+<body>
+  <section class="bar-contador">
+    <div id="logo">
+      <h1>Memory game</h1>
+      <img class="flag" src="./assets/img/united-kingdom-flag.png" alt="bandera de Reino Unido">
+    </div>
+    <section class="contadores">
+      <article class="tiempo">
+        <h1 class="cabecera-titulo">Movimientos</h1>
+        <div class="reloj">
+          <p id="mov">0</p>
+        </div>
+      </article>
+      <article class="tiempo">
         <h1 class="cabecera-titulo">Tiempo</h1>
         <div class="reloj">
           <p id="minutos">00</p>
           <span>:</span>
           <p id="segundos">00</p>
         </div>
-        </article>
-      </section>
-
-
+      </article>
     </section>
-    <main>
-      <nav id="menu">
-        <h1>Categorías</h1>
-      </nav>
+    <h2 class="description">Elige una categoría y empareja las palabras, puedes ver al final cómo queda tu contador de movimientos y tiempo</h2>
+  </section>
+  <nav id="menu"></nav>
+  <main class="main">
 
-      <section id="mesa" class="mesa"></section>
+    <section id="mesa" class="mesa"></section>
+  </main>
+  <section id="feedback" class="feedback">
+    <div class="modal">
+      <h2>¡Buen trabajo! 🥳</h2>
+      <button class="croupier">Seguir jugando</button>
+    </div>
+  </section>
 
-    </main>
-    <section id="feedback" class="feedback">
-      <div class="modal">
-        <h2>¡Buen trabajo! 🥳</h2>
-        <button class="croupier">Seguir jugando</button>
-      </div>
-    </section>
-    <script src="js/variables-globales.js"></script>
-    <script src="js/crear-menu.js"></script>
-    <script src="js/baraja-reparte.js"></script>
-    <script src="js/contador-mov.js"></script>
-    <script src="js/descubrir-comparar.js"></script>
-    <script src="js/acierto-error.js"></script>
-    <script src="js/cronometro.js"></script>
-    <script src="js/iniciar.js"></script>
-    <script src="js/finalizar.js"></script>
-  </body>
+  <footer class="footer">
+    <p> Made with ♥️ by Tatiana
+
+      <a href="https://github.com/taticode" target="_blank">
+        <svg width="32" height="32" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 0.359741C20.8483 0.359741 17.7274 0.995932 14.8156 2.23199C11.9038 3.46805 9.25804 5.27976 7.02944 7.5637C2.52856 12.1763 0 18.4324 0 24.9556C0 35.827 6.888 45.0504 16.416 48.3216C17.616 48.5184 18 47.7559 18 47.0919V42.9352C11.352 44.4109 9.936 39.6393 9.936 39.6393C8.832 36.7862 7.272 36.0237 7.272 36.0237C5.088 34.4988 7.44 34.548 7.44 34.548C9.84 34.7201 11.112 37.0813 11.112 37.0813C13.2 40.8199 16.728 39.7131 18.096 39.1228C18.312 37.5241 18.936 36.4418 19.608 35.827C14.28 35.2121 8.688 33.0968 8.688 23.7258C8.688 20.9957 9.6 18.8066 11.16 17.0603C10.92 16.4454 10.08 13.8875 11.4 10.567C11.4 10.567 13.416 9.90293 18 13.0758C19.896 12.5347 21.96 12.2641 24 12.2641C26.04 12.2641 28.104 12.5347 30 13.0758C34.584 9.90293 36.6 10.567 36.6 10.567C37.92 13.8875 37.08 16.4454 36.84 17.0603C38.4 18.8066 39.312 20.9957 39.312 23.7258C39.312 33.1214 33.696 35.1875 28.344 35.8024C29.208 36.5648 30 38.0652 30 40.3526V47.0919C30 47.7559 30.384 48.543 31.608 48.3216C41.136 45.0258 48 35.827 48 24.9556C48 21.7256 47.3792 18.5273 46.1731 15.5432C44.967 12.5591 43.1992 9.84763 40.9706 7.5637C38.742 5.27976 36.0962 3.46805 33.1844 2.23199C30.2726 0.995932 27.1517 0.359741 24 0.359741Z" fill="#05257C"/>
+          </svg>
+      </a>
+  
+      <a href="https://www.linkedin.com/in/tatianagarciafrontend/" target="_blank">
+        <svg width="32" height="32" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M42.6667 0.359741C44.0812 0.359741 45.4377 0.921644 46.4379 1.92184C47.4381 2.92203 48 4.27859 48 5.69307V43.0264C48 44.4409 47.4381 45.7975 46.4379 46.7976C45.4377 47.7978 44.0812 48.3597 42.6667 48.3597H5.33333C3.91885 48.3597 2.56229 47.7978 1.5621 46.7976C0.561903 45.7975 0 44.4409 0 43.0264V5.69307C0 4.27859 0.561903 2.92203 1.5621 1.92184C2.56229 0.921644 3.91885 0.359741 5.33333 0.359741H42.6667ZM41.3333 41.6931V27.5597C41.3333 25.2541 40.4174 23.0429 38.7871 21.4126C37.1568 19.7823 34.9456 18.8664 32.64 18.8664C30.3733 18.8664 27.7333 20.2531 26.4533 22.3331V19.3731H19.0133V41.6931H26.4533V28.5464C26.4533 26.4931 28.1067 24.8131 30.16 24.8131C31.1501 24.8131 32.0997 25.2064 32.7999 25.9065C33.5 26.6067 33.8933 27.5563 33.8933 28.5464V41.6931H41.3333ZM10.3467 15.1864C11.5348 15.1864 12.6743 14.7144 13.5145 13.8742C14.3547 13.0341 14.8267 11.8946 14.8267 10.7064C14.8267 8.22641 12.8267 6.19974 10.3467 6.19974C9.15142 6.19974 8.00514 6.67455 7.15997 7.51971C6.31481 8.36488 5.84 9.51117 5.84 10.7064C5.84 13.1864 7.86667 15.1864 10.3467 15.1864ZM14.0533 41.6931V19.3731H6.66667V41.6931H14.0533Z" fill="#05257C"/>
+          </svg>
+          
+      </a>
+  
+    </p>
+
+
+
+
+  </footer>
+</body>
+
 </html>
