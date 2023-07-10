@@ -507,6 +507,9 @@ details[open] summary {
     margin: 0 0.4rem 0.4rem 0;
   }
   .nombre{
-    font-size: .6rem;
+    font-size: .8rem;
+  }
+  .acertada .contenido::after{
+    font-size: 1rem;
   }
 }
