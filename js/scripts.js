@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
             else if (nombre === 'eventos') {
                 state.selectedArray = state.eventos;
             }
+            else if (nombre === 'colegio') {
+                state.selectedArray = state.colegio;
+            }
             reparteTarjetas()
             iniciar()
             iniciarCronometro()

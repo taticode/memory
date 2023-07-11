@@ -604,7 +604,185 @@ let eventos = [
         icono: './assets/img/fiesta/whistle.png'
     }
 ]
-let categorias = ['animales', 'vegetales', 'comida', 'eventos'];
+let colegio = [
+    {
+        clave: 'alfabeto',
+        languages: {
+            spanish: 'alfabeto',
+            english: 'alphabet'
+        },
+        icono: './assets/img/colegio/alphabet.png'
+    },
+    {
+        clave: 'mochila',
+        languages: {
+            spanish: 'mochila',
+            english: 'backpack'
+        },
+        icono: './assets/img/colegio/backpack.png'
+    },
+    {
+        clave: 'pizarra',
+        languages: {
+            spanish: 'pizarra',
+            english: 'blackboard'
+        },
+        icono: './assets/img/colegio/blackboard.png'
+    },
+    {
+        clave: 'libros',
+        languages: {
+            spanish: 'libros',
+            english: 'books'
+        },
+        icono: './assets/img/colegio/books.png'
+    },
+    {
+        clave: 'calculadora',
+        languages: {
+            spanish: 'calculadora',
+            english: 'calculator'
+        },
+        icono: './assets/img/colegio/calculator.png'
+    },
+    {
+        clave: 'colores',
+        languages: {
+            spanish: 'lápices de color',
+            english: 'color pencils'
+        },
+        icono: './assets/img/colegio/color-pencils.png'
+    },
+    {
+        clave: 'compas',
+        languages: {
+            spanish: 'compás',
+            english: 'compass'
+        },
+        icono: './assets/img/colegio/compass.png'
+    },
+    {
+        clave: 'ceras',
+        languages: {
+            spanish: 'ceras',
+            english: 'crayons'
+        },
+        icono: './assets/img/colegio/crayons.png'
+    },
+    {
+        clave: 'agenda',
+        languages: {
+            spanish: 'agenda',
+            english: 'diary'
+        },
+        icono: './assets/img/colegio/diary.png'
+    },
+    {
+        clave: 'borrador',
+        languages: {
+            spanish: 'borrador',
+            english: 'eraser'
+        },
+        icono: './assets/img/colegio/eraser.png'
+    },
+    {
+        clave: 'pegamento',
+        languages: {
+            spanish: 'pegamento',
+            english: 'glue'
+        },
+        icono: './assets/img/colegio/glue.png'
+    },
+    {
+        clave: 'marcador',
+        languages: {
+            spanish: 'marcador',
+            english: 'marker'
+        },
+        icono: './assets/img/colegio/marker.png'
+    },
+    {
+        clave: 'boli',
+        languages: {
+            spanish: 'bolígrafo',
+            english: 'pen'
+        },
+        icono: './assets/img/colegio/pen.png'
+    },
+    {
+        clave: 'lapiz',
+        languages: {
+            spanish: 'lápiz',
+            english: 'pencil'
+        },
+        icono: './assets/img/colegio/pencil.png'
+    },
+    {
+        clave: 'transpor',
+        languages: {
+            spanish: 'transportador',
+            english: 'protactor'
+        },
+        icono: './assets/img/colegio/protactor.png'
+    },
+    {
+        clave: 'regla',
+        languages: {
+            spanish: 'regla',
+            english: 'ruler'
+        },
+        icono: './assets/img/colegio/ruler.png'
+    },
+    {
+        clave: 'bus',
+        languages: {
+            spanish: 'autobús',
+            english: 'bus'
+        },
+        icono: './assets/img/colegio/school-bus.png'
+    },
+    {
+        clave: 'colegio',
+        languages: {
+            spanish: 'colegio',
+            english: 'school'
+        },
+        icono: './assets/img/colegio/school.png'
+    },
+    {
+        clave: 'tijeras',
+        languages: {
+            spanish: 'tijeras',
+            english: 'scissors'
+        },
+        icono: './assets/img/colegio/scissors.png'
+    },
+    {
+        clave: 'sacapuntas',
+        languages: {
+            spanish: 'sacapuntas',
+            english: 'sharpener'
+        },
+        icono: './assets/img/colegio/sharpener.png'
+    },
+    {
+        clave: 'grapadora',
+        languages: {
+            spanish: 'grapadora',
+            english: 'stapler'
+        },
+        icono: './assets/img/colegio/stapler.png'
+    },
+    {
+        clave: 'profesora',
+        languages: {
+            spanish: 'profesor/ a',
+            english: 'teacher'
+        },
+        icono: './assets/img/colegio/teacher.png'
+    },
+]
+let categorias = ['animales', 'vegetales', 'comida', 'eventos', 'colegio'];
 
 export const state = {
     movimientos,
@@ -615,5 +793,6 @@ export const state = {
     vegetales,
     comida,
     eventos,
+    colegio,
     categorias,
 }
